@@ -1,6 +1,4 @@
 #!/bin/bash
-python3 - <<'PY'
-name = r"""\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)"""
-with open(name, "w", encoding="utf-8") as f:
-    f.write("Best School\n")
-PY
+# Build the exact filename without tricky quoting
+fname=$(printf '%b' "\\*\\\\'\"Best School\"\\'\\\\*\\$\\?\\*\\*\\*\\*\\*:)")
+printf 'Best School\n' > "$fname"
