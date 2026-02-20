@@ -1,4 +1,3 @@
-# Shell - I/O Redirections and Filters
+# IO Redirections and Filters
 
-This directory contains Bash scripts for I/O redirections and filters tasks.
-Each script is executable.
+24-gifs: lists all .gif files recursively, including hidden, prints names without extension, sorted case-insensitively
