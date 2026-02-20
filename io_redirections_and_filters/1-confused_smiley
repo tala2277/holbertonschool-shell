@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '"(Ôo)'\''\n'
+printf '"(\303\224o)'\''\n'
