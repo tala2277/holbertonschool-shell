@@ -1,4 +1,3 @@
 #!/bin/bash
-# Build the exact filename without tricky quoting
 fname=$(printf '%b' "\\*\\\\'\"Best School\"\\'\\\\*\\$\\?\\*\\*\\*\\*\\*:)")
 printf 'Best School\n' > "$fname"
