@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "\"(Ôo)'"
+python3 - <<'PY'
+print("\"(Ôo)'")
+PY
