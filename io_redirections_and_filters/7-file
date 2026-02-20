@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Best School" > "*\\\"Best School\"\\'\\\\*\\$\\?\\*\\*\\*\\*\\*:)"
+fname=$'\\*\\\\\\\'"Best School"\\\'\\\\\\\\*$\\?\\*\\*\\*\\*\\*:)'
+printf "Best School\n" > "$fname"
