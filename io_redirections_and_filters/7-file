@@ -1,3 +1,6 @@
 #!/bin/bash
-fname=$'\\*\\\\\'"Best School"\\\'\\\\*$\\?\\*\\*\\*\\*\\*:)'
-printf 'Best School\n' > "$fname"
+python3 - <<'PY'
+name = r"""\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)"""
+with open(name, "w", encoding="utf-8") as f:
+    f.write("Best School\n")
+PY
